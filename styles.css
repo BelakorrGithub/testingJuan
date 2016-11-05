@@ -1,0 +1,72 @@
+h1 {
+    text-align: center;
+    color: darkmagenta;
+    font-family: sans-serif;
+}
+
+html {
+    background: 
+        repeating-linear-gradient(40deg, transparent, transparent 20px, #fff 20px, #999 40px),
+        linear-gradient( to bottom, #fff, #999);
+    height:100%;
+}
+
+.slide-buttons-container {
+    height: 800px;
+    position: relative;
+    text-align: center;
+    max-width: 1700px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 2px solid #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.slide {
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.slide div {
+    height: 100%;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#arrow-left,
+#arrow-right{
+    width: 30px;
+    background-color: gray;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 20px 0;
+    position: absolute;
+    top: 360px;
+    z-index: 2;
+    border: 2px solid #000;
+    -webkit-user-select: none; /* -- */
+    -moz-user-select: none;    /* Disable text selection to avoid blue highlight on click and drag */
+    -ms-user-select: none;     /* -- */
+}
+
+#arrow-right {
+    right: 0;
+    border-right: none;
+}
+
+#arrow-left {
+    border-left: none;
+}
+
+.MSW-accreditation {
+    display: block;
+    text-align: center;
+}
+.slide div{
+    background-size: cover;
+    color: white;
+}
